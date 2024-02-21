@@ -22,6 +22,18 @@ public class Pokemon
     public Element Element { get; set; }
 
     /// <summary>
+    /// Identifiant du pokémon sur l'API
+    /// </summary>
+    public int pokemonApiId { get; set; }
+
+    /// <summary>
+    /// Propriété calculée donnant l'url de l'image
+    /// </summary>
+    public string? UrlPicture => $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemonApiId}.png";
+
+    public string FullName => $"{Name}  - [{Element.Name}]";
+
+    /// <summary>
     /// Constructeur d'un pokémon
     /// </summary>
     /// <param name="name">Nom</param>

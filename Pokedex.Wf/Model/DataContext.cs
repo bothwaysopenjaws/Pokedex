@@ -68,18 +68,18 @@ namespace Pokedex.Wf.Model
             Elements.Add(dragon);
             Elements.Add(dark);
 
-            Pokemons.Add(new Pokemon("Lipoutou", psychic));
-            Pokemons.Add(new Pokemon("Bulbizarre", grass));
-            Pokemons.Add(new Pokemon("Gardevoir", psychic));
-            Pokemons.Add(new Pokemon("Dracofeu", fire));
-            Pokemons.Add(new Pokemon("Pikachu", electric));
-            Pokemons.Add(new Pokemon("Evoli", normal));
-            Pokemons.Add(new Pokemon("Tiplouf", water));
-            Pokemons.Add(new Pokemon("Signabraze", fire));
-            Pokemons.Add(new Pokemon("Chetiflore", grass));
-            Pokemons.Add(new Pokemon("Palkia", steel));
-            Pokemons.Add(new Pokemon("Calinos", fire));
-            Pokemons.Add(new Pokemon("Tadmorv", poison));
+            Pokemons.Add(new Pokemon("Lipoutou", psychic) { pokemonApiId = 124 });
+            Pokemons.Add(new Pokemon("Bulbizarre", grass) { pokemonApiId = 1 });
+            Pokemons.Add(new Pokemon("Gardevoir", psychic) { pokemonApiId = 282 });
+            Pokemons.Add(new Pokemon("Dracofeu", fire) { pokemonApiId = 6 });
+            Pokemons.Add(new Pokemon("Pikachu", electric) { pokemonApiId = 25 });
+            Pokemons.Add(new Pokemon("Evoli", normal) { pokemonApiId = 133 });
+            Pokemons.Add(new Pokemon("Tiplouf", water) { pokemonApiId = 393 });
+            Pokemons.Add(new Pokemon("Signabraze", fire) { pokemonApiId = 392 });
+            Pokemons.Add(new Pokemon("Chetiflore", grass) { pokemonApiId = 69 });
+            Pokemons.Add(new Pokemon("Palkia", steel) { pokemonApiId = 484 });
+            Pokemons.Add(new Pokemon("Calinos", fire) { pokemonApiId = 58 });
+            Pokemons.Add(new Pokemon("Tadmorv", poison) { pokemonApiId = 88 });
 
 
         }

@@ -21,6 +21,8 @@ public class Element
     /// </summary>
     public List<Pokemon> Pokemons { get; set; }
 
+    public string FullName => $"{Name} ({Pokemons.Count})";
+
     /// <summary>
     /// Constructeur d'un élément
     /// </summary>

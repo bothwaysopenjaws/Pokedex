@@ -24,13 +24,12 @@ namespace Pokedex.Wf.Windows
         {
             listBoxElements.DataSource = null;
             listBoxElements.DataSource = Context.Elements;
-            listBoxElements.DisplayMember = "Name";
+            listBoxElements.DisplayMember = nameof(Element.FullName);
         }
 
         private void buttonAddElement_Click(object sender, EventArgs e)
         {
             Element element = new Element("Nouvel élément");
-
             Context.Elements.Add(element);
             RefreshList();
         }

@@ -28,6 +28,11 @@ public partial class MainWindow : Form
 
     private void buttonManagerPokemons_Click(object sender, EventArgs e)
     {
-
+        FormManagerPokemon form = new FormManagerPokemon();
+        form.Context = Context;
+        form.RefreshList();
+        this.Visible = false;
+        form.ShowDialog();
+        this.Visible = true;
     }
 }
