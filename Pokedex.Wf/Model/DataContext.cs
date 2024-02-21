@@ -10,7 +10,7 @@ namespace Pokedex.Wf.Model
     /// <summary>
     /// Contexte de donnée de l'application
     /// </summary>
-    internal class DataContext
+    public class DataContext
     {
         /// <summary>
         /// Liste des éléments

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             labelTitle = new Label();
             buttonManagerElement = new Button();
             buttonManagerPokemons = new Button();
@@ -36,13 +37,15 @@
             // labelTitle
             // 
             labelTitle.AutoSize = true;
+            labelTitle.BackColor = Color.Transparent;
             labelTitle.Font = new Font("Segoe Fluent Icons", 40F);
-            labelTitle.Location = new Point(95, 15);
+            labelTitle.Location = new Point(91, -20);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(180, 54);
+            labelTitle.Padding = new Padding(10);
+            labelTitle.Size = new Size(200, 74);
             labelTitle.TabIndex = 0;
             labelTitle.Text = "Pokédex";
-            labelTitle.Click += label1_Click;
+            labelTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // buttonManagerElement
             // 
@@ -52,6 +55,7 @@
             buttonManagerElement.TabIndex = 1;
             buttonManagerElement.Text = "Gestion des éléments";
             buttonManagerElement.UseVisualStyleBackColor = true;
+            buttonManagerElement.Click += buttonManagerElement_Click;
             // 
             // buttonManagerPokemons
             // 
@@ -61,18 +65,22 @@
             buttonManagerPokemons.TabIndex = 2;
             buttonManagerPokemons.Text = "Gestion des pokémons";
             buttonManagerPokemons.UseVisualStyleBackColor = true;
+            buttonManagerPokemons.Click += buttonManagerPokemons_Click;
             // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.background;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(349, 205);
             Controls.Add(buttonManagerPokemons);
             Controls.Add(buttonManagerElement);
             Controls.Add(labelTitle);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainWindow";
-            Text = "Form1";
+            Text = "Pokedex";
             ResumeLayout(false);
             PerformLayout();
         }

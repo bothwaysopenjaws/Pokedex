@@ -9,7 +9,7 @@ namespace Pokedex.Wf.Model;
 /// <summary>
 /// Element du pokémon
 /// </summary>
-internal class Element
+public class Element
 {
     /// <summary>
     /// Nom de l'élément
